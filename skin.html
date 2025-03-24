@@ -26,8 +26,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -308,112 +307,144 @@
             color: #666;
         }
     </style> -->
-
-    <div class="container mx-auto p-6">
+<style>
+    #skin-box{
+        display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 1rem;
+    }
+    #main-skinbox{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        }
+        #box{
+            width: 22rem;
+            height: 22rem;
+        }
+        @media (max-width: 640px) {
+            #skin-box {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                width: 100%;
+            }    
+            #box{
+                width: 100%;
+                height: 100%;
+            }       
+        }
+</style>
+    <div class="container mx-auto p-6 " id="main-skinbox"
         <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Our Skin & Aesthetic Treatments</h2>
 
         <!-- Grid Layout -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div id="skin-box" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
             <!-- Service Box (Repeat for each service) -->
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Skin Tightening"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Skin Tightening</h3>
                 <p class="text-gray-600">Non-surgical methods to enhance skin elasticity.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Skin Brightening"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Skin Brightening</h3>
                 <p class="text-gray-600">Specialized treatments for radiant skin.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Face Lift"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Face Lift</h3>
                 <p class="text-gray-600">Non-invasive and surgical face rejuvenation.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Rhinoplasty"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Rhinoplasty</h3>
                 <p class="text-gray-600">(Nose Correction) Improve shape & function.</p>
             </div>
-
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            </div>
+            <div id="skin-box">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Botox & Fillers"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Botox & Fillers</h3>
                 <p class="text-gray-600">Reduce wrinkles & enhance volume.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Lip Augmentation"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Lip Augmentation</h3>
                 <p class="text-gray-600">Enhance lip shape & volume.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Skin Rejuvenation"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Skin Rejuvenation</h3>
                 <p class="text-gray-600">Restore youthful glow & health.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Lasers/IPL"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Lasers/IPL</h3>
                 <p class="text-gray-600">Advanced laser therapy for skin correction.</p>
             </div>
-
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        </div>
+        <div id="skin-box">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Scar Revision"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Scar Revision</h3>
                 <p class="text-gray-600">Improve appearance of scars.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Acne Scars"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Acne Scars</h3>
                 <p class="text-gray-600">Targeted treatments for acne scars.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Melasma"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Melasma</h3>
                 <p class="text-gray-600">Treat skin discoloration effectively.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Sagging Face"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Sagging Face</h3>
                 <p class="text-gray-600">Tighten loose skin & restore firmness.</p>
             </div>
-
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        </div>
+        <div id="skin-box">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="CIT Therapy"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">CIT Therapy</h3>
                 <p class="text-gray-600">Stimulate collagen & improve skin texture.</p>
             </div>
 
-            <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <div id="box" class="bg-white shadow-lg rounded-lg p-4 text-center">
                 <img src="https://via.placeholder.com/150" alt="Post Traumatic Scar"
                     class="w-full h-40 object-cover rounded-md mb-3">
                 <h3 class="text-lg font-bold text-blue-600">Post Traumatic Scar</h3>
                 <p class="text-gray-600">Scar treatment for injury & trauma.</p>
             </div>
-
+        </div>
         </div>
     </div>
     <!-- Newsletter Start -->
