@@ -110,11 +110,27 @@
             <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal">
                 <i class="fa fa-search"></i>
             </button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+             <button type="button" class="btn btn-primary py-2 px-4 ms-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                Appointment
+            </button>
         </div>
     </nav>
     <!-- Navbar End -->
 
+ <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Book Your Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://link.appointio.co/widget/booking/222ULjmrqP03nJ1dD23l" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="222ULjmrqP03nJ1dD23l_1750657773453"></iframe><br>
+                    <script src="https://link.appointio.co/js/form_embed.js" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">
